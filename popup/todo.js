@@ -73,21 +73,20 @@ function init(){
 function List_Item(txt){
 	// ol -> li was too annoying, switched to divs
 	// List_Item is <div id="list"> <p class="divText">string</p> <div class="btnDiv"> <button class='done'>-</button> <button class="remove">X</button> </div> </div>
-    this.li = document.createElement('div');
-	
+	this.li = document.createElement('div');
 	this.txt = txt;
 	this.taskText = document.createTextNode(this.txt);
 	this.textDiv = document.createElement('p');
-	
+
 	this.btnDiv = document.createElement('div');
 	this.editBtn = document.createElement('button');
 	this.removeBtn = document.createElement('button');
-	
+
 	this.editImg = document.createElement('img');
 	this.editImg.setAttribute('src', '../icons/pencil.png');
 	this.editImg.setAttribute('width', '20px');
 	this.editImg.className = 'entryImg';
-	
+
 	this.remImg = document.createElement('img');
 	this.remImg.setAttribute('src', '../icons/recycle-bin.png');
 	this.remImg.setAttribute('width', '20px');
