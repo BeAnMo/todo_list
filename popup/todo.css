@@ -1,0 +1,96 @@
+/*
+TODOS:
+-flex causes list divs to shrink vertically
+*/
+
+body, html {
+	height: 400px;
+	width: 300px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	background-color: #F8F8F8;
+}
+
+h3 {
+	text-align: center;
+	font-weight: 500;
+}
+
+#list {
+	height: 320px;
+	width: 290px;
+	background-color: #FBFBFB;
+	overflow: auto;
+	box-shadow: inset 0 3px 3px #ddd;
+	margin: 0;
+}
+
+.listItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+	margin: 0;
+	height: 40px;
+	flex-shrink: 1;
+}
+
+.textDiv {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 3%;
+}
+
+.listItem > input {
+	width: 70%;
+	margin: 3%;
+}
+
+.btnDiv {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: flex-end;
+}
+
+.btnDiv > button {
+	text-align: center;
+	height: 60%;
+	width: 20px;
+	padding: 0;
+	margin: 3% 1% 3% 3%;
+	border: none;
+	border-radius: 0;
+	background-color: rgba(255,255,255,0.0);
+}
+
+.btnDiv button .entryImg {
+	-webkit-filter: hue-rotate(180deg);
+	filter: hue-rotate(180deg);
+}
+
+.listItem:hover {
+	background-color: #558ABB;
+	box-shadow: 0 3px 3px #ddd;
+	color: #fff;
+}
+
+#textBox {
+	width: 280px;
+	margin: 5px;
+}
+
+.btn-group {
+	margin: 0 5px 5px 5px;
+}
+
+.btn-group > button {
+	text-align: center;
+	width: 70px;
+}
