@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "ToDo",
+
+	"version": "10.21.2016",
+	
+	"description": "A todo list that you can return to each new browser session.",
+	"homepage_url": "https://beanmo.github.io",
+	"icons": {
+		"48": "icons/diary.png"
+	},
+	
+	"permissions": ["tabs"],
+	
+	"browser_action": {
+		"browser_style": true,
+		"default_icon":  "icons/diary.png",
+		"default_title": "ToDo",
+		"default_popup": "popup/todo.html"
+	}
+}
